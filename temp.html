@@ -1,129 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <style>
-    .row-height-30 {
-      height: 35vh;
-    }
-    .row-height-55 {
-      height: 55vh;
-    }
-    .col {
-      border: 1px solid steelblue;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
 
 
-</head>
+    </head>
+<body>
+
+   <h2>Aflevering af Lotte Eliasson</h2>
+
+<h3>JS Week 4, day 1 exercise</h3>
+
+<h3>JS Week 4, day 2 exercise</h3>
+<ul>
+    
+    <li><a href="Exercise1.html">Exercise 1</a></li>
+    <li><a href="Exercise2.html">Exercise 2</a></li>
+    <li><a href="Exercise3.html">Exercise 3</a></li>
+    <li><a href="Exercise4.html">Exercise 4</a></li>
+    <li><a href="Exercise5.html">Exercise 5</a></li>
 
 
-<body style="font-family: sans-serif">
-  <div style="margin-top:1em;margin-left: 3%;width: 90%;margin-right: auto;">
-    <h2>Car's 'R' Us Client Demo - Version poor ;-)</h2>
-    <div class="container-fluid">
-      <div class="row row-height-30">
-        <!--########################  SHOW ALL CARS OR MEMBERS ########################-->
-        <div class="col">
-          <h3>Show all Members or Cars</h3>
-          <button id="btn-get-all">Get all</button>
-          <p>Show what you find here</p>
-          <table style="display: block;" class="table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Brand</th>
-                <th>Model</th>
-                <th>Price pr day</th>
-                <th>Best Discount</th>
-              </tr>
-            </thead>
-            <tbody style="display:block;max-height: 8em;overflow-y: scroll;" id="tbody">
-          </table>
-        </div>
+    <h3>JS Week 5 day 1 exercises</h3>
+    <li><a href="fetch.html">Exercise 1 Fetch</a></li>
+    <li><a href="country.html">Exercise 2 Country</a></li>
+    <li><a href="day3.html">Exercise 3 Cars'R'Us</a></li>
 
+    <li><a href="https://github.com/LotteEliasson/JSexWeek5.git">Github Lotte Eliasson</a></li>
+    
+</ul>
 
-        <!--########################  FIND A SINGLE CAR OR MEMBER ########################-->
-        <div class="col">
-          <h3>Find a single Member or Car</h3>
-          <label for="text-for-id">Id</label>&nbsp;<input id="text-for-id" />
-          <button id="btn-find-car">Find</button>
-          <p id="found-car">Show what you find here</p>
-        </div>
-      </div>
-      <div class="row row-height-55">
-        <!--########################  ADD A CAR OR MEMBER ########################-->
-        <div class="col">
-          <h3>Add a Car or a Member</h3>
-<form id="carForm">
-            <div class="row mb-3">
-              <label for="brand" class="col-sm-2 col-form-label">Brand</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="brand" name="brand">
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="model" class="col-sm-2 col-form-label">Model</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="model" name="model">
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="pricePrDay" class="col-sm-2 col-form-label">Price Per Day</label>
-              <div class="col-sm-10">
-                <input type="number" step="0.01" class="form-control" id="pricePrDay" name="pricePrDay">
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="bestDiscount" class="col-sm-2 col-form-label">Best Discount</label>
-              <div class="col-sm-10">
-                <input type="number" class="form-control" id="bestDiscount" name="bestDiscount">
-              </div>
-            </div>
-           
-          </form>
-          <button id="add-car">Submit new item</button>
-         
-          <p id="new-car-response">Show returned data, if any</p>
-          <p>Use one of the two GET pages to verify that "something" was added</p>
-        </div>
-
-
-        <!--########################  EDIT A CAR OR MEMBER ########################-->
-        <div class="col">
-          <h3>Edit a Car or a Member</h3>
-          <label for="edit-car">Id</label>&nbsp;<input id="edit-car" />
-          <button id="edit-car-button">Find item to edit</button>
-          <p>Show what you find here, and let users edit fields</p>
-            <div>
-                <label for="edit-brand">Brand</label>&nbsp;<input type="text" id="edit-brand" name="brand" />
-            </div>
-            <div>
-                <label for="edit-model">Model</label>&nbsp;<input type="text" id="edit-model" name="model" />
-            </div>
-            <div>
-                <label for="edit-pricePrDay">Price Per Day</label>&nbsp;<input type="number" id="edit-pricePrDay" name="pricePrDay"/>
-            </div>
-            <div>
-                <label for="edit-bestDiscount">Best Discount</label>&nbsp;<input type="number" id="edit-bestDiscount" name="bestDiscount"/>
-            </div>
-            <button id="submit-edited-car">Submit edited item</button>
-            <p>Use one of the two GET pages to verify that "something" was added</p>
-        </div>
-         
-      </div>
-    </div>
-  </div>
-  <script src="car1.js"></script>
+    <script src=""></script>
 </body>
-
-
 </html>
